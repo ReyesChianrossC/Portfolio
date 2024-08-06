@@ -1,0 +1,403 @@
+body{
+    background-color: #262b35;
+    margin: 0;
+}
+#container{
+    position: relative;
+    display: flex;
+}
+#contactContainer{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    top: 10px;
+    right: 30px;
+    gap: 20px;
+}
+.contact{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(224, 224, 224);
+    background-color: rgb(26, 26, 26);
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: 0.25s color;
+    z-index: 5;
+}
+.contact:hover{
+    color: rgba(224, 224, 224, 0.541);;
+
+}
+#topBackground{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(26, 26, 26);
+    z-index: -1;
+}
+#aboutMeContainer{
+    color: rgb(204, 216, 226);
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 100px;
+    width: 600px;
+}
+#aboutMeParagraph1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#aboutMeParagraph2{
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#me{
+    position: absolute;
+}
+#mePic{
+    width: 200px;
+    height: 200px;
+    margin-left: 900px;
+    margin-top: 150px;
+    border-radius: 5px;
+    z-index: -1;
+}
+#jsTop{
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    margin-left: 787px;
+    margin-top: 158px;
+    padding-bottom: 17px;
+    background-color: #212020;
+    color: white;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 112.5;
+    animation: glowCode 2s 1.5s forwards;
+    z-index: 1;
+}
+#codePortion{
+    font-size: 16px;
+    position: absolute;
+    height: 350px;
+    width: 540px;
+    margin-left: 900px;
+    padding-left: 9px;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-top: 200px;
+    right: 20px;
+    background-color: #212020;
+    color: white;
+    font-family: "Inconsolata";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 112.5;
+    animation: glowCode 2s 1.5s forwards;
+    z-index: 2;
+}
+#loc20{
+    border-right: red;
+}
+#aboutMeParagraph1, #aboutMeParagraph2{
+    animation: growAbout 2s 2.4s forwards;
+}
+@keyframes glowCode{
+    0%{
+        background-color: antiquewhite;
+        opacity: 100%;
+    }
+    100%{
+        background-color: #262b35;
+        opacity: 0%;
+    }
+}
+@keyframes glowBox{
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: white;
+        opacity: 0;
+    }
+}
+@keyframes growAbout{
+    0%{
+        
+    }
+    100%{
+        translate: 20%;
+    }
+}
+@keyframes showPic{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+@keyframes growLeft{
+    0%{
+
+    }
+    100%{
+        border-left: 500px;
+    }
+}
+#boxContainer{
+    position: absolute;
+}
+.box{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #262b35;
+}
+#box1{
+    margin-left: 900px;
+    margin-top: 150px;
+    animation: glowBox 3s 4.5s forwards;
+}
+#box2{
+    margin-left: 940px;
+    margin-top: 150px;
+    animation: glowBox 3s 4.2s forwards;
+}
+#box3{
+    margin-left: 980px;
+    margin-top: 150px;
+    animation: glowBox 3s 4.7s forwards;
+}
+#box4{
+    margin-left: 1020px;
+    margin-top: 150px;
+    animation: glowBox 3s 4.9s forwards;
+}
+#box5{
+    margin-left: 1060px;
+    margin-top: 150px;
+    animation: glowBox 3s 4.4s forwards;
+}
+#box6{
+    margin-left: 900px;
+    margin-top: 190px;
+    animation: glowBox 3s 4.3s forwards;
+}
+#box7{
+    margin-left: 940px;
+    margin-top: 190px;
+    animation: glowBox 3s 4.1s forwards;
+}
+#box8{
+    margin-left: 980px;
+    margin-top: 190px;
+    animation: glowBox 3s 4.3s forwards;
+}
+#box9{
+    margin-left: 1020px;
+    margin-top: 190px;
+    animation: glowBox 3s 4.7s forwards;
+}
+#box10{
+    margin-left: 1060px;
+    margin-top: 190px;
+    animation: glowBox 3s 4.2s forwards;
+}
+#box11{
+    margin-left: 900px;
+    margin-top: 230px;
+    animation: glowBox 3s 4s forwards;
+}
+#box12{
+    margin-left: 940px;
+    margin-top: 230px;
+    animation: glowBox 3s 4.5s forwards;
+}
+#box13{
+    margin-left: 980px;
+    margin-top: 230px;
+    animation: glowBox 3s 4.8s forwards;
+}
+#box14{
+    margin-left: 1020px;
+    margin-top: 230px;
+    animation: glowBox 3s 4.3s forwards;
+}
+#box15{
+    margin-left: 1060px;
+    margin-top: 230px;
+    animation: glowBox 3s 4.9s forwards;
+}
+#box16{
+    margin-left: 900px;
+    margin-top: 270px;
+    animation: glowBox 3s 5s forwards;
+}
+#box17{
+    margin-left: 940px;
+    margin-top: 270px;
+    animation: glowBox 3s 4.2s forwards;
+}
+#box18{
+    margin-left: 980px;
+    margin-top: 270px;
+    animation: glowBox 3s 4.8s forwards;
+}
+#box19{
+    margin-left: 1020px;
+    margin-top: 270px;
+    animation: glowBox 3s 4.7s forwards;
+}
+#box20{
+    margin-left: 1060px;
+    margin-top: 270px;
+    animation: glowBox 3s 4.9s forwards;
+}
+#box21{
+    margin-left: 900px;
+    margin-top: 310px;
+    animation: glowBox 3s 4.6s forwards;
+}
+#box22{
+    margin-left: 940px;
+    margin-top: 310px;
+    animation: glowBox 3s 4.1s forwards;
+}
+#box23{
+    margin-left: 980px;
+    margin-top: 310px;
+    animation: glowBox 3s 4.4s forwards;
+}
+#box24{
+    margin-left: 1020px;
+    margin-top: 310px;
+    animation: glowBox 3s 4s forwards;
+}
+#box25{
+    margin-left: 1060px;
+    margin-top: 310px;
+    animation: glowBox 3s 4.6s forwards;
+}
+#contactMeContainer{
+    margin: auto;
+    color: white;
+    font-size: 25px;
+    margin: 110px auto;
+    text-align: center;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 112.5;
+    translate: 10%;
+}
+#contactH1{
+    text-align: center;
+    translate: -10% -20%;
+}
+.linksPic{
+    width: 100px;
+    height: 100px;
+}
+#socialsContainer{
+    display: flex;
+    color: white;
+    margin: 110px auto;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 112.5;
+    padding-left: 18px;
+    padding-top: 12px;
+}
+#socialsH1{
+    translate: -60% -20%;
+    font-size: 25px;
+    position: absolute;
+    display: flex;
+    text-align: center;
+}
+#linksIcons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    translate: -270% 15%;
+}
+#linksLabels{
+    font-size: 25px;
+    flex-direction: column;
+    margin-top: 110px;
+    gap: 100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    translate: -40%;
+}
+#resume{
+    position: absolute;
+    width: 850px;
+    height: 1000px;
+    margin: 180px 250px;
+}
+.grid{
+    position: relative;
+    display: grid;
+    margin: 150px auto;
+    grid-template-rows: repeat(2, 500px);
+    grid-template-columns: repeat(2, 600px);
+    grid-gap: 20px;
+    justify-content: center;
+}
+.video{
+    margin-top: 60px;
+    position: absolute;
+    width: 500px;
+    height: 280px;
+}
+.flex-item{
+    display: flex;
+    position: relative;
+    flex: 1;
+    justify-content: center;
+    width: 600px;
+    height: 500px;
+}
+.item-label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    position: absolute;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+}
+.item-label-desc{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    margin-top: 375px;
+    font-family: Arial, Helvetica, sans-serif;
+}
